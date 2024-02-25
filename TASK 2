@@ -1,0 +1,75 @@
+#include<iostream>
+#include<cmath>
+#include<cstring>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int num;
+	cout<<"Enter the input 1 or 2"<<endl;
+	cout<<"Enter the Input : ";
+	cin>>num;
+	if(num==1)
+	{
+		
+			int num1;
+			cout<<"Enter the number : ";
+			cin>>num1;
+			cout<<"Enter | for Square root"<<endl;
+			cout<<"Enter / for Cube root"<<endl;
+			char opt;
+			cout<<"Enter the Operator : ";
+			cin>>opt;
+			if(opt=='|')
+			{
+				cout<<"Result : "<<sqrt(num1)<<endl;
+			}
+			else if(opt=='/')
+			{
+				cout<<"Result : "<<cbrt(num1)<<endl;
+			}
+			else
+			{
+				cout<<"Incorrect operator";
+			}
+	}
+	else if(num==2)
+	{
+			int num1,num2;
+			cout<<"Enter two numbers : ";
+			cin>>num1>>num2;
+			cout<<"Enter + for Addition"<<endl<<"Enter - for Subtraction"<<endl<<"Enter * for Multiplication"<<endl<<"Enter / for Division"<<endl<<"FOR MODULOUS [%]"<<endl<<"FOR POWER [^]"<<endl;
+			char op;
+			cout<<"Enter the Operator : ";
+			cin>>op;
+			if(op=='+')
+			{
+				cout<<"Your Result is : "<<n1+n2;
+			}
+			else if(op=='-')
+			{
+				cout<<"Your Result is : "<<n1-n2;
+			}
+			else if(op=='*')
+			{
+				cout<<"Your Result is : "<<n1*n2;
+			}
+			else if(op=='^')
+			{
+				cout<<"Your Result is : "<<pow(n1,n2);
+			}
+			else if(op=='/')
+			{
+				cout<<"Your Result is : "<<n1/n2;
+			}
+			else if(op=='%')
+			{
+				cout<<"Your Result is : "<<n1%n2;
+			}
+			else 
+			{
+				cout<<"Wrong operator...! ";
+			}
+		cout<<endl<<"Your Project is over..!";
+	}
+}
